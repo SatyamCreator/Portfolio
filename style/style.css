@@ -28,6 +28,11 @@ body{
         & .logo{
             width: 80px;
         }
+        &  .logo-text{
+            line-height: 85%;
+            font-family: 'Noto Serif', serif;
+            font-weight: bold;
+        }
     }
 
     & .navbar-nav{
@@ -85,15 +90,17 @@ body{
 }
 
 .btn-outline-blue{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.158);
     color: var(--blue);
     border: 1px solid var(--blue);
     transition: all 0.5s ease-in-out;
+    backdrop-filter: blur(2px);
 
     &:hover{
         /* background-color: rgb(226, 226, 226); */
-        background: linear-gradient(0deg, #e0f4ff 0%, #c9ecff 100%);
-        color: var(--blue);
+        /* background: linear-gradient(0deg, #e0f4ff 0%, #c9ecff 100%); */
+        background: var(--blue);
+        color: var(--white);
         border: 1px solid var(--blue);
     }
 }
@@ -124,12 +131,8 @@ body{
 }
 
 
-.hr-line{
-    border: 1px solid rgb(0, 0, 0);
-    margin: 2px;
-    opacity: 1;
-}
-
+.hr-line{border: 1px solid rgb(0, 0, 0); margin: 2px; opacity: 1;}
+.text-blue{ color: var(--blue);}
 .title{  font-family: "Noto Serif", serif !important;     font-size: calc(1.2rem + 1.5vw); }
 .fstyle-1{font-family: "Noto Serif", serif;}
 
@@ -158,4 +161,26 @@ body{
         background-color: rgb(255, 255, 255);
         border-radius: 25px;
     }
+}
+
+.card-imgs{ 
+    width: 100%;
+    height: 100px;
+    aspect-ratio: 1/1;
+    object-fit: contain;}
+
+
+/* black theme */
+[data-bs-theme="dark"]{
+ .bg-white {
+    background-color: var(--black) !important;
+  }
+  .text-black{
+    color: var(--white) !important;
+  }
+
+.hr-line{border: 1px solid var(--white); margin: 2px; opacity: 1;}
+
+.navbar .nav-item .nav-link{ color: var(--white);}
+  
 }

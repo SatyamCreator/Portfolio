@@ -88,7 +88,12 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container-fluid px-lg-5 px-2">
       <a class="navbar-brand" href="index.html">
-        <img src="img/logo.png" alt="" class="img-fluid logo">
+        <div class="d-flex align-items-center ">
+          <div> <img src="img/logo.png" alt="" class="img-fluid logo"></div>
+          <div> <div class="logo-text">Satyam</div><div class="logo-text">Creator</div></div>
+        </div>
+       
+       
       </a>
       <div class="d-flex d-lg-none" role="search">
         <div class="nav-item pt-1">
@@ -101,10 +106,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="dropdown">
-          <button class="btn border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <div class="dropdown pt-1">
+          <a class="nav-link fs-5 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="ri-sun-fill"></i>
-          </button>
+          </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="theme-mode-btn"
             style="min-width: 90px !important">
             <li class="mb-1">
@@ -167,12 +172,12 @@
 
             <li class="dropdown px-2 d-none d-lg-block">
               <!-- Switch button -->
-              <button class="modeswitch btn btn-light rounded-btn dropdown-toggle mx-auto" id="theme-mode-btn"
+              <a class="modeswitch nav-link dropdown-toggle" id="theme-mode-btn"
                 type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static">
                 <svg class="theme-mode-icon-active">
                   <use href="#"><i class="ri-sun-fill"></i></use>
                 </svg>
-              </button>
+              </a>
               <!-- Dropdown items -->
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="theme-mode-btn">
                 <li class="mb-1">
@@ -227,7 +232,7 @@
                   considering user experience and branding guidelines.
                 </h5>
                 <div class="mt-4">
-                  <a href="#" class="btn btn-outline-blue ms-2 px-4">Contact Me <i class="ri-arrow-right-line"></i></a>
+                  <a href="#" class="btn btn-outline-blue rounded-pill px-5 ms-2 px-4">Contact Me <i class="ri-arrow-right-line"></i></a>
                   <!-- <a href="#" class="btn btn-outline-blue   ms-2">GET STARTED</a> -->
                 </div>
               </div>
@@ -483,45 +488,49 @@
             Our team of experts has extensive experience in web development.
           </p>
           </div>
+
           <div class="col-sm-4">
-            <div class="inner bg-portfolio shadow p-4">
-              <img src="img/Clients/cednaimgmain.jpg" alt="image" class="img-fluid" />
-              <h4 class="py-2">Cedna Biotech</h4>
+            <div class="inner bg-white shadow p-4 rounded-4">
+             
+              <h4 >Cedna Biotech</h4>
+
+              <img src="img/Clients/cednaimgmain.jpg" alt="image" class="img-fluid p-3 card-imgs" />
               <p>
                 Cedna Biotech is a dynamic, innovative pharmaceutical company
                 that cares about the health and well being of people across
                 the Globe.
               </p>
 
-              <a href="https://www.cednabiotech.com/" target="_blank" class="btn btn-outline-blue">View Site</a>
+              <a href="https://www.cednabiotech.com/" target="_blank" class="btn btn-outline-blue rounded-pill px-5">View Site</a>
             </div>
           </div>
 
           <div class="col-sm-4">
-            <div class="inner bg-portfolio shadow p-4">
-              <img src="img/Clients/biotech-healthcare.png" alt="image" class="img-fluid" />
-              <h4 class="py-2">Biotech Healthcare</h4>
+            <div class="inner bg-white shadow p-4 rounded-4">
+              <h4>Biotech Healthcare</h4>
+              <img src="img/Clients/biotech-healthcare.png" alt="image" class="img-fluid p-3 card-imgs" />
+             
               <p>
                 Biotech Healthcare is the global healthcare company that is
-                engaged in manufacturing and exporting of Medical Equipment,
-                Hospital Furniture, Surgical Instruments.
+                engaged in manufacturing and exporting of Medical Equipment.
               </p>
 
-              <a href="https://biotech-healthcare.com/" target="_blank" class="btn btn-outline-blue">View Site</a>
+              <a href="https://biotech-healthcare.com/" target="_blank" class="btn btn-outline-blue rounded-pill px-5">View Site</a>
             </div>
           </div>
 
           <div class="col-sm-4">
-            <div class="inner bg-portfolio shadow p-4">
-              <img src="img/Clients/finelhistorika.png" alt="image" class="img-fluid" />
-              <h4 class="py-2">Historika Foundations</h4>
+            <div class="inner bg-white shadow p-4 rounded-4">
+              <h4>Historika Foundations</h4>
+              <img src="img/Clients/finelhistorika.png" alt="image" class="img-fluid p-3 card-imgs" />
+              
               <p>
                 Chandru Ramesh is an accomplished author, researcher, and
                 speaker specializing in Indian history. He left his software
-                engineering career to pursue...
+                engineering.
               </p>
 
-              <a href="https://historika.org/" target="_blank" class="btn btn-outline-blue">View Site</a>
+              <a href="https://historika.org/" target="_blank" class="btn btn-outline-blue rounded-pill px-5">View Site</a>
             </div>
           </div>
         </div>
