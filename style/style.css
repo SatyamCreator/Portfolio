@@ -135,7 +135,7 @@ body{
 .text-blue{ color: var(--blue);}
 .title{  font-family: "Noto Serif", serif !important;     font-size: calc(1.2rem + 1.5vw); }
 .fstyle-1{font-family: "Noto Serif", serif;}
-
+.bg-card{filter: drop-shadow(0px 0px 2px rgb(0, 0, 0));}
 
 .bg-skills{
     background-color: rgba(255, 255, 255, 0.041);
