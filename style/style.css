@@ -144,8 +144,26 @@ body{
     & .bg-hero-title{
         background: #d0f7ec;
     }
+
+    & .blink{
+        animation: blinker 1s linear infinite;
+        transition: all 0.2s ease-in-out;
+        background-color: var(--white);
+        padding:0px 1px;
+        /* border-radius: 5px; */
+        color: var(--blue);
+        margin-left: 5px;
+    }
     
-}
+        
+    }
+
+    @keyframes blinker {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
 
 
 .hr-line{border: 1px solid rgb(0, 0, 0); margin: 2px; opacity: 1;}
@@ -154,6 +172,8 @@ body{
 .fstyle-1{font-family: "Noto Serif", serif;}
 .bg-card{filter: drop-shadow(0px 0px 2px rgb(0, 0, 0));}
 .fs-small{font-size: 0.8rem;}
+
+
 
 .bg-skills{
     background-color: rgba(255, 255, 255, 0.041);
