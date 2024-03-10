@@ -106,6 +106,21 @@ body{
         border: 1px solid var(--blue);
     }
 }
+.btn-blue{
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--blue);
+    transition: all 0.5s ease-in-out;
+    backdrop-filter: blur(2px);
+
+    &:hover{
+        /* background-color: rgb(226, 226, 226); */
+        /* background: linear-gradient(0deg, #e0f4ff 0%, #c9ecff 100%); */
+        background: var(--white);
+        color: var(--blue);
+        border: 1px solid var(--blue);
+    }
+}
 
 .hero{
     background-image: url('../img/bg-dark.svg');
@@ -138,6 +153,7 @@ body{
 .title{  font-family: "Noto Serif", serif !important;     font-size: calc(1.2rem + 1.5vw); }
 .fstyle-1{font-family: "Noto Serif", serif;}
 .bg-card{filter: drop-shadow(0px 0px 2px rgb(0, 0, 0));}
+.fs-small{font-size: 0.8rem;}
 
 .bg-skills{
     background-color: rgba(255, 255, 255, 0.041);
@@ -145,6 +161,15 @@ body{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
     /* backdrop-filter: blur(10px); */
     color: white;
+
+    & h4{
+        font-size: large;
+
+        @media screen and (max-width: 600px) {
+            font-size: 1rem;
+            
+        }
+    }
 
     &:hover{
         background-color: var(--orange);
