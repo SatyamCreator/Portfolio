@@ -7,7 +7,9 @@
 
 
 body{
-    
+    scroll-behavior: smooth;
+    /* padding-top: 100px; */
+
     font-family: "Poppins", sans-serif;
     background-image: url('../img/BG1.svg');
     background-repeat: no-repeat;
@@ -183,4 +185,53 @@ body{
 
 .navbar .nav-item .nav-link{ color: var(--white);}
   
+}
+
+.footer{
+
+    background-color: var(--black);
+    color: var(--white);
+
+    & .logo{
+        width: 100px;
+    }
+    &  .logo-text{
+        line-height: 85%;
+        font-family: 'Noto Serif', serif;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    & h5::after{
+        content: '';
+        display: block;
+        width: 50px;
+        background-color: var(--white);
+        height: 2px;
+        border-radius: 50px;
+    }
+
+     & ul{
+        list-style: none;
+        padding: 0;
+         
+        & li a{
+            color: var(--white);
+            text-decoration: none;
+            font-size: small;
+
+            &:hover{
+                color: var(--blue);
+            }
+        }
+     }
+
+     & .copyrights{
+        border-top: 1px solid var(--white);
+        background-color: var(--blacks);
+
+        & a{
+            text-decoration: none;
+        }
+     }
 }

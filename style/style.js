@@ -50,3 +50,22 @@ window.addEventListener('scroll', function() {
     }
 });
 
+// ==========================
+ // Smooth scrolling effect using JavaScript
+// JavaScript to handle smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const sectionId = this.getAttribute('href').substring(1); // Remove the '#'
+      const section = document.getElementById(sectionId);
+      
+      // Calculate the scroll position, considering the padding-top
+      const offsetTop = section.offsetTop - 90;
+
+      window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+      });
+  });
+});
