@@ -69,3 +69,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
   });
 });
+
+// Spinner
+var spinner = function (timeout) {
+    setTimeout(function () {
+        var spinnerElement = document.getElementById('spinner');
+        if (spinnerElement) {
+            spinnerElement.classList.remove('show');
+        }
+    }, timeout || 0);
+};
+spinner(0);

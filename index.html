@@ -76,9 +76,7 @@
   <script src="style/darkmode.js"></script>
 
   <link rel="stylesheet" href="style/swiper.css">
-</head>
 
-<body>
   <style>
     .modeswitch svg,
     .dropdown-menu svg {
@@ -86,6 +84,19 @@
       height: 20px;
     }
   </style>
+</head>
+ 
+<body>
+
+
+  <!-- Spinner Start -->
+  <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status">
+      <img src="img/logo.png" alt="" class="img-fluid">
+    </div>
+</div>
+<!-- Spinner End -->
+
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container-fluid px-lg-5 px-2">
@@ -754,41 +765,7 @@ of legal, moral and ethical values.
       });
     </script>
 
-<script>
-  function typeWriter(text, i, speed) {
-    var textBox = document.getElementById("typewriter-text");
-    if (textBox === null) {
-      throw new Error("Could not find element with id 'typewriter-text'");
-    }
-    if (text === null) {
-      throw new Error("text is null");
-    }
-    if (i < 0) {
-      throw new Error("i is negative");
-    }
-    if (speed < 1) {
-      throw new Error("speed is less than 1");
-    }
-    if (i < text.length) {
-      textBox.innerHTML += text.charAt(i);
-      i++;
-      setTimeout(function() { typeWriter(text, i, speed); }, speed);
-    } else {
-      // Once typing completes, reset the text content and start typing again (loop)
-      setTimeout(function() {
-        textBox.innerHTML = '';
-        typeWriter(text, 0, speed);
-      }, 2000); // Delay before starting typing again (2 seconds in this case)
-    }
-  }
-  
-  // Start typing
-  window.onload = function() {
-    var text = "SATYAM CREATOR";
-    var speed = 100; // Adjust the speed here
-    typeWriter(text, 0, speed);
-  };
-  </script>
+<script src="style/typingeffect.js"></script>
 </body>
 
 </html>

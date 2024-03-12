@@ -20,6 +20,32 @@ body{
     background-blend-mode: multiply;
 }
 
+/*** Spinner Start ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .8s ease-out, visibility 0s linear .5s;
+    -o-transition: opacity .8s ease-out, visibility 0s linear .5s;
+    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+ }
+
+ #spinner.show {
+     -webkit-transition: opacity .8s ease-out, visibility 0s linear .0s;
+     -o-transition: opacity .8s ease-out, visibility 0s linear .0s;
+     transition: opacity .8s ease-out, visibility 0s linear .0s;
+     visibility: visible;
+     opacity: 1;
+ }
+
+ .spinner-border, .spinner-grow{
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+ }
+/*** Spinner End ***/
+
+
 /* navbar */
 .navbar{
     /* font-family: 'Noto Serif', serif; */
