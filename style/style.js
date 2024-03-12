@@ -80,3 +80,39 @@ var spinner = function (timeout) {
     }, timeout || 0);
 };
 spinner(0);
+
+
+// back to top
+
+document.addEventListener("DOMContentLoaded", function() {
+    var backToTopBtn = document.getElementById("backToTopBtn");
+
+    if (!backToTopBtn) {
+        console.error("Element with id 'backToTopBtn' not found");
+        return;
+    }
+
+    window.addEventListener("scroll", function() {
+        // Show or hide the button based on scroll position
+        if (window.pageYOffset > 300) {
+            backToTopBtn.style.visibility = "visible";
+            backToTopBtn.style.opacity = "1";
+        } else {
+            backToTopBtn.style.visibility = "hidden";
+            backToTopBtn.style.opacity = "0";
+        }
+    });
+
+    backToTopBtn.addEventListener("click", function() {
+        // Scroll to the top smoothly
+        if (!backToTopBtn) {
+            console.error("Element with id 'backToTopBtn' not found");
+            return;
+        }
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});

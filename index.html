@@ -179,11 +179,11 @@
                 data-bs-target="#Satyammodal"><i class="ri-search-2-line"></i></a>
             </li>
             <li class="nav-item">
-              <button class="btn btn-outline-orange" onclick="window.location.href='img/Resume.pdf'"
+              <!-- <button class="btn btn-outline-orange" type="button" onclick="window.location.href='img/Resume.pdf'"
                 download="Resume.pdf">
                 Download CV
-              </button>
-              <!-- <a class="btn btn-outline-orange" aria-current="page" href="img/Resume.pdf" download="Resume.pdf">Download CV</a> -->
+              </button> -->
+              <a class="btn btn-outline-orange" aria-current="page" target="_blank" title="Download CV" href="img/Resume.pdf" download="Resume.pdf">Download CV</a>
             </li>
 
             <li class="dropdown px-2 d-none d-lg-block">
@@ -666,6 +666,7 @@ of legal, moral and ethical values.
                 </ul>
 
                 <div class="d-flex gap-3 social mb-3">
+                  <a href="https://wa.me/+918588974552?text=Hello Sir" target="_blank"><i class="ri-whatsapp-line"></i></a>
                   <a href="https://www.facebook.com/profile.php?id=100095448368688" target="_blank"><i class="ri-facebook-circle-line"></i></a>
                   <a href="https://www.instagram.com/satyam_creator/" target="_blank"><i class="ri-instagram-line"></i></a>
                   <a href="https://twitter.com/satyam_creator" target="_blank"><i class="ri-twitter-line"></i></a>
@@ -684,6 +685,8 @@ of legal, moral and ethical values.
       </div>
       </div>
 </footer>
+    <!-- Back to top button -->
+    <button id="backToTopBtn"><i class="ri-arrow-up-s-line"></i></button>
 
 
   <!-- Modal -->
@@ -717,6 +720,50 @@ of legal, moral and ethical values.
       </div>
     </div>
   </div>
+
+ <!-- Button trigger modal -->
+    <!-- form modal -->
+    <script>
+      const myTimeout = setTimeout(myGreeting, 6000);
+  
+      function myGreeting() {
+        document.getElementById("startrunning").click();
+      }
+    </script>
+<button type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#modaltimer" id="startrunning">
+  Modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modaltimer" tabindex="-1" aria-labelledby="modaltimerLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-warning">
+      <div class="modal-body">
+        <div class="d-flex justify-content-end">
+        <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="py-5">
+
+<h4 class="h2 text-center">Follow Me</h4>
+<div class="d-flex justify-content-center gap-3">
+  <a href="https://wa.me/+918588974552?text=Hello Sir" class="text-decoration-none  btn btn-light btn-sm py-0" target="_blank"><i class="ri-whatsapp-line fs-2 m-0 p-0"></i></a>
+ <a href="https://www.facebook.com/profile.php?id=100095448368688" class="text-decoration-none  btn btn-light btn-sm py-0" target="_blank"><i class="ri-facebook-circle-line fs-2 m-0 p-0"></i></a>
+ <a href="http://www.instagram.com/satyam_creator" class="text-decoration-none  btn btn-light btn-sm py-0" target="_blank"><i class="ri-instagram-line fs-2 m-0 p-0"></i></a>
+ <a href="http://www.twitter.com/satyam_creator" class="text-decoration-none  btn btn-light btn-sm py-0" target="_blank"><i class="ri-twitter-line fs-2 m-0 p-0"></i></a>
+ <a href="http://www.linkedin.com/in/satyam-creator" class="text-decoration-none  btn btn-light btn-sm py-0" target="_blank"><i class="ri-linkedin-line fs-2 m-0 p-0"></i></a>
+</div>
+
+
+
+</div>
+
+          
+      </div>
+
+    </div>
+  </div>
+</div>
+
   <script src="style/style.js"></script>
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
