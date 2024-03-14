@@ -15,9 +15,9 @@ body{
     background-image: url('../img/BG1.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-color: rgba(255, 255, 255, 0);
-    background-blend-mode: multiply;
+    background-blend-mode: overlay;
 }
 
 /*** Spinner Start ***/
@@ -383,6 +383,13 @@ body{
 
     }
 
+}
+
+.bg-modal{
+    background-image: url('../img/10515255.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
 }
 
 ::-webkit-scrollbar{
