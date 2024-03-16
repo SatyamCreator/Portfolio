@@ -1,0 +1,90 @@
+
+.menu-container {
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+}
+
+.menu-toggle-btn {
+    height: 40px;
+    width: 40px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    box-shadow: 3px 3px 2px 1px rgb(0 0 0 / 20%);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.menu-toggle-btn i {
+    font-size: 2rem;
+    color: #eeeeee;
+    transition: 0.5s;
+}
+
+.menu-toggle-btn.effect i {
+    transform: rotate(135deg);
+}
+
+.menu-list {
+    list-style: none;
+    bottom: -15px;
+    right: -5px;
+    position: absolute;
+    z-index: 1;
+}
+
+.menu-list .menu-item {
+    height: 2.2rem;
+    width: 2.2rem;
+    bottom: 0.0rem;
+    right: 0.4rem;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange);
+    transition: 0.5s;
+}
+
+.menu-list .menu-item a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+.menu-list .menu-item:hover {
+    background-color: #8864fd;
+}
+
+.menu-list.effect .menu-item {
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.menu-list.effect .menu-item:nth-of-type(1) {
+    bottom: 0rem;
+    right: 5.2rem;
+    transition-delay: 0.1s;
+}
+
+.menu-list.effect .menu-item:nth-of-type(2) {
+    bottom: 2.3rem;
+    right: 4.5rem;
+    transition-delay: 0.2s;
+}
+.menu-list.effect .menu-item:nth-of-type(3) {
+    bottom: 3.7rem;
+    right: 2.7rem;
+    transition-delay: 0.3s;
+}
+
+
+.menu-list.effect .menu-item:nth-of-type(4) {
+    bottom: 4.2rem;
+    right: 0.3rem;
+    transition-delay: 0.4s;
+}
