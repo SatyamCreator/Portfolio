@@ -582,3 +582,17 @@ body{
       width: 5%;
     }
   }
+
+  .swiper-button-next{
+    --swiper-navigation-size:25px;
+    right: 0;
+    margin-right: -10px;
+
+  }
+
+  .swiper-button-prev{
+    --swiper-navigation-size:25px;
+    left: 0;
+    margin-left: -10px;
+
+  }
