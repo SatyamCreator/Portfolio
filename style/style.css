@@ -326,7 +326,7 @@ body {
 }
 
 .bg-modal {
-  background-image: url("../img/10515255.png");
+  /* background-image: url("../img/10515255.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -390,6 +390,13 @@ body {
 #hero .carousel-content {
   text-align: left;
 }
+
+#hero .video{
+  background-color: #000;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
 
 @media (max-width: 992px) {
   #hero,
