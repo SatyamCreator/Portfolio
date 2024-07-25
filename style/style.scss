@@ -276,9 +276,13 @@ body{
        object-fit: contain;}
 
 
+       .bg-card{
+        background-color: var(--bs-light) !important;
+       }
+
 /* black theme */
 [data-bs-theme="dark"]{
- .bg-white {
+ .bg-white , .bg-light{
     background-color: var(--black) !important;
   }
   .text-black{
@@ -573,9 +577,9 @@ body{
   }
   
   @media (min-width: 1024px) {
-    #hero p {
-      /* width: 60%; */
-    }
+    // #hero p {
+    //  width: 60%;
+    // }
   
     #hero .carousel-control-prev,
     #hero .carousel-control-next {

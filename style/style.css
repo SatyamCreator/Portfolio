@@ -532,3 +532,8 @@ body {
   left: 0;
   margin-left: -10px;
 }/*# sourceMappingURL=style.css.map */
+
+.img-shadow{
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.966));
+}
+
