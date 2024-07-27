@@ -5,6 +5,17 @@
   --white:#ffffff;
 }
 
+@font-face {
+  font-family: 'nav-font';
+  src: url('../fonts/Segoe-UI.ttf');
+}
+
+@font-face {
+  font-family: 'font-2';
+  src: url('../fonts/simple-ask.otf');
+}
+
+
 body {
   scroll-behavior: smooth;
   /* padding-top: 100px; */
@@ -48,20 +59,20 @@ body {
   font-size: calc(1.2rem + 1vw) !important;
 }
 .navbar .navbar-brand .logo {
-  width: 80px;
+  width: 70px;
 }
 .navbar .navbar-brand .logo-text {
   line-height: 85%;
-  font-family: "Noto Serif", serif;
-  font-weight: bold;
+  font-weight: 300;
 }
 .navbar .navbar-nav .nav-item {
   padding-left: 8px;
   padding-right: 8px;
 }
 .navbar .navbar-nav .nav-item .nav-link {
-  font-weight: 600;
+  font-weight: 300;
   color: var(--black);
+  font-family: "nav-font", sans-serif;
 }
 .navbar .navbar-nav .nav-item .nav-link:hover {
   color: var(--orange);
@@ -537,3 +548,13 @@ body {
   filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.966));
 }
 
+
+.home-banner{
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../img/pexels-kubiceknov-924824.jpg);
+}
