@@ -558,3 +558,31 @@ body {
   overflow: hidden;
   background-image: url(../img/pexels-kubiceknov-924824.jpg);
 }
+
+
+.fixed-buttons {
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.fixed-buttons a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  color: white;
+  font-size: 24px;
+  background-color: #007bff; /* Bootstrap primary color */
+  text-decoration: none;
+}
+.fixed-buttons a.whatsapp {
+  background-color: #25D366; /* WhatsApp color */
+}
+.fixed-buttons a.call {
+  background-color: #28A745; /* Call color */
+}
