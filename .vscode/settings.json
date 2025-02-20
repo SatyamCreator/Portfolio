@@ -1,3 +1,4 @@
 {
-    "gitblame.commitUrl": "https://github.com/SatyamCreator/Portfolio"
+    "gitblame.commitUrl": "https://github.com/SatyamCreator/Portfolio",
+    "livePreview.defaultPreviewPath": "/index.html"
 }

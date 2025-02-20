@@ -1,6 +1,57 @@
 // data.js
 const sites = [
   {
+    name: "K-smatco Lifesciences",
+    image: "img/Clients/k.png",
+    description: "Searching for easier ways to access care options, consult a doctor, or schedule vaccinations? K-smatco Lifesciences Pvt. Ltd.",
+    link: "https://www.ksmatco.com/"
+  },
+
+  {
+    name: "Fexprime Finance",
+    image: "img/Clients/fflogo.png",
+    description: "With a rich legacy and a renewed vision, we are embarking on an exciting new chapter in our journey to redefine financial solutions.",
+    link: "https://fexprime.com/"
+  },
+
+  {
+    name: "Jamston India",
+    image: "img/Clients/jamston.png",
+    description: "Investing in Jamston India Pvt Ltd is a great option for those looking for long-term financial growth. With its strategic location.",
+    link: "https://www.jamston.in/"
+  },
+
+  {
+    name: "Zafarabad Jaunpur",
+    image: "img/Clients/logozf.png",
+    description: "जफराबाद और जौनपुर को देखें तो अंतरात्मा कराह उठती है। १३ वीं-१४ वीं सदी की इस्लामी इमारतों और मौजूदा बसाहटों के नीचे पुराने नगर के मलबों के ढेर हैं.",
+    link: "https://www.jaunpurhistory.com/"
+  },
+
+  {
+    name: "AVI SECURITY",
+    image: "img/Clients/avilogo.png",
+    description: "we are dedicated to delivering comprehensive solutions for security, facility management, and allied services.",
+    link: "https://www.avisecuritas.com/"
+  },
+
+  {
+    name: "Arogyadham Charitable",
+    image: "img/Clients/arogyadhamhealthcare.png",
+    description: "Arogyadham Charitable Healthcare Centre, your premier destination for comprehensive healthcare solutions in Delhi.",
+    link: "https://arogyadhamhealthcare.in/"
+  },
+
+  {
+    name: "Struqta Foundation",
+    image: "img/Clients/struqta.png",
+    description: "we are committed to safeguarding our planet for future generations. Founded with a deep sense of responsibility towards nature.",
+    link: "https://www.struqtafoundation.org/"
+  },
+
+
+
+  {
     name: "Cedna Biotech",
     image: "img/Clients/cednaimgmain.jpg",
     description: "Cedna Biotech is a dynamic, innovative pharmaceutical company that cares about the health and well-being of people across the Globe.",
