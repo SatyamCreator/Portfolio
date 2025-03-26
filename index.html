@@ -936,25 +936,27 @@
           <!-- <div class="d-flex justify-content-end">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div> -->
-          <div>
-            <label for="exampleDataList" class="form-label">Search here</label>
-            <input class="form-control" type="search" list="datalistOptions" id="exampleDataList"
-              placeholder="Type to search..." />
-            <datalist id="datalistOptions">
-              <option value="Website Development"></option>
-              <option value="Website Design Packages"></option>
-              <option value="Website Hosting Packages"></option>
-              <option value="Website Maintenance"></option>
-              <option value="Website Promotion (SEO)"></option>
-              <option value="Digital Marketing Solutions"></option>
-              <option value="Domian Registration"></option>
-              <option value="ERP"></option>
-              <option value="Mail Hosting Services"></option>
-              <option value="Server Management"></option>
-              <option value="Training Program"></option>
-              <option value="Web Portal Development"></option>
-            </datalist>
-          </div>
+         <form role="search" method="get" id="searchform" class="searchform" target="_blank" action="https://www.google.com/search?q=">
+              <div id="gform">
+                <label for="q" class="form-label screen-reader-text">Search here</label>
+                <input type="search" value="" name="q" id="q" class="form-control" list="datalistOptions"
+                  placeholder="Search here..." />
+                  <datalist id="datalistOptions">
+                    <option value="Website Development"></option>
+                    <option value="Website Design Packages"></option>
+                    <option value="Website Hosting Packages"></option>
+                    <option value="Website Maintenance"></option>
+                    <option value="Website Promotion (SEO)"></option>
+                    <option value="Digital Marketing Solutions"></option>
+                    <option value="Domian Registration"></option>
+                    <option value="ERP"></option>
+                    <option value="Mail Hosting Services"></option>
+                    <option value="Server Management"></option>
+                    <option value="Training Program"></option>
+                    <option value="Web Portal Development"></option>
+                  </datalist>
+              </div>
+            </form>
         </div>
       </div>
     </div>
